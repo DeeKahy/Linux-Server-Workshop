@@ -1,0 +1,12 @@
+[Unit]
+Description=Heartbeat - my first systemd service
+After=network.target
+
+[Service]
+# Change this path to wherever you cloned the repo
+ExecStart=/usr/bin/python3 /home/ubuntu/server-workshop/03-systemd-service/heartbeat.py
+Restart=always
+User=ubuntu
+
+[Install]
+WantedBy=multi-user.target
