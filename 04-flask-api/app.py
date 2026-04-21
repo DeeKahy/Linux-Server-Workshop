@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-# A simple in-memory list — resets every time you restart the server
+# A simple in-memory list - resets every time you restart the server
 messages = []
 
 @app.route("/")

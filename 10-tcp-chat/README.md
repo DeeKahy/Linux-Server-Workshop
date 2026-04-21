@@ -1,6 +1,6 @@
-# 07 — TCP Chat Server
+# 07 - TCP Chat Server
 
-This one is different from the others — it's a **multiplayer** project. One person in the room runs the server, and everyone else connects to it. You can all send messages to each other in real time, directly through the terminal.
+This one is different from the others - it's a **multiplayer** project. One person in the room runs the server, and everyone else connects to it. You can all send messages to each other in real time, directly through the terminal.
 
 No internet required. It works entirely over the local network.
 
@@ -8,7 +8,7 @@ No internet required. It works entirely over the local network.
 
 ## How it works (the simple version)
 
-Your computer and the server are connected by a **socket** — basically a pipe between two programs. This project opens that pipe up to multiple people at once. When you type a message, it goes to the server, and the server forwards it to everyone else.
+Your computer and the server are connected by a **socket** - basically a pipe between two programs. This project opens that pipe up to multiple people at once. When you type a message, it goes to the server, and the server forwards it to everyone else.
 
 ---
 
@@ -37,7 +37,7 @@ Others can connect with:  python3 client.py YOUR_SERVER_IP
 Waiting for connections...
 ```
 
-The server terminal will show you who connects and disconnects, and print every message. **Don't close this terminal** — the chat dies if you do.
+The server terminal will show you who connects and disconnects, and print every message. **Don't close this terminal** - the chat dies if you do.
 
 Tell everyone else your IP address so they can connect.
 
@@ -75,7 +75,7 @@ Bob: hey everyone
 ## What's actually happening?
 
 - `server.py` listens on **port 9999** for incoming connections
-- Each time someone connects, it starts a new **thread** — a separate mini-program running in parallel — to handle that person
+- Each time someone connects, it starts a new **thread** - a separate mini-program running in parallel - to handle that person
 - When a message arrives from one client, `broadcast()` loops through all connected clients and sends it to each one
 - `client.py` also uses a thread: one for receiving messages (so they appear automatically) and one for sending (reading your input)
 
@@ -87,4 +87,4 @@ Bob: hey everyone
 - Add a `/users` command that lists everyone currently in the chat
 - Show the time next to each message (hint: `import datetime`)
 - Make the server log all messages to a file so you can read the history later
-- Try connecting more than 5 people — does it hold up?
+- Try connecting more than 5 people - does it hold up?

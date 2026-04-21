@@ -1,0 +1,11 @@
+// Refresh the list of available packages every day
+APT::Periodic::Update-Package-Lists "1";
+
+// Download available upgrades every day
+APT::Periodic::Download-Upgradeable-Packages "1";
+
+// Run unattended-upgrades every day
+APT::Periodic::Unattended-Upgrade "1";
+
+// Clean up old downloaded packages every 7 days
+APT::Periodic::AutocleanInterval "7";

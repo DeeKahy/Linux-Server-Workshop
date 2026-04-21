@@ -1,0 +1,14 @@
+// Only automatically install security updates (not every available upgrade)
+Unattended-Upgrade::Allowed-Origins {
+    "${distro_id}:${distro_codename}-security";
+};
+
+// Remove unused packages automatically after upgrading
+Unattended-Upgrade::Remove-Unused-Dependencies "true";
+
+// Set to "true" if you want the server to reboot automatically after kernel updates
+// "false" is safer - you reboot manually when ready
+Unattended-Upgrade::Automatic-Reboot "false";
+
+// Optional: send email notifications (leave commented out to disable)
+// Unattended-Upgrade::Mail "you@example.com";

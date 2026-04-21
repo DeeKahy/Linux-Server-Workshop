@@ -1,12 +1,12 @@
-# 03 — systemd Service
+# 03 - systemd Service
 
-So far, every program you've run stops when you close the terminal. **systemd** is the tool Linux uses to run programs as proper background services — they start automatically on boot and restart if they crash.
+So far, every program you've run stops when you close the terminal. **systemd** is the tool Linux uses to run programs as proper background services - they start automatically on boot and restart if they crash.
 
 This project runs a tiny script called `heartbeat.py` that writes a log every 5 seconds. You'll turn it into a service.
 
 ---
 
-## Step 1 — Run it manually first
+## Step 1 - Run it manually first
 
 ```bash
 cd 03-systemd-service
@@ -22,7 +22,7 @@ cat /tmp/heartbeat.log
 
 ---
 
-## Step 2 — Edit the service file
+## Step 2 - Edit the service file
 
 Open `heartbeat.service` and update the path on the `ExecStart` line to match where you cloned the repo:
 
@@ -39,7 +39,7 @@ If you cloned somewhere else, adjust the path. Save with `ctrl+o` then `ctrl+x`.
 
 ---
 
-## Step 3 — Install the service
+## Step 3 - Install the service
 
 Copy the service file to where systemd looks for services:
 
@@ -54,7 +54,7 @@ sudo systemctl daemon-reload
 
 ---
 
-## Step 4 — Start it
+## Step 4 - Start it
 
 ```bash
 sudo systemctl start heartbeat
@@ -69,7 +69,7 @@ You should see `active (running)` in green.
 
 ---
 
-## Step 5 — Watch the logs
+## Step 5 - Watch the logs
 
 ```bash
 # Watch the log file update live
@@ -83,7 +83,7 @@ Press `ctrl+c` to stop watching.
 
 ---
 
-## Step 6 — Make it start on boot
+## Step 6 - Make it start on boot
 
 ```bash
 sudo systemctl enable heartbeat
@@ -109,5 +109,5 @@ Now it will survive a reboot.
 ## Challenge ideas
 
 - Edit `heartbeat.py` to log something different, then restart the service and watch it change
-- Make the service restart automatically after a crash — look up `Restart=on-failure` in the service file
+- Make the service restart automatically after a crash - look up `Restart=on-failure` in the service file
 - Try stopping the process manually (`sudo kill <pid>`) and watch systemd bring it back

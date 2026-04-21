@@ -1,12 +1,12 @@
-# 06 — Cron Jobs
+# 06 - Cron Jobs
 
-In the systemd project you made a service that runs *constantly*. Sometimes you don't want that — you just want something to run **at a specific time**, like "every day at midnight" or "every 5 minutes".
+In the systemd project you made a service that runs *constantly*. Sometimes you don't want that - you just want something to run **at a specific time**, like "every day at midnight" or "every 5 minutes".
 
 That's what **cron** is for. It's a scheduler built into every Linux system.
 
 ---
 
-## Step 1 — Try the script manually
+## Step 1 - Try the script manually
 
 ```bash
 cd 06-cron-jobs
@@ -23,7 +23,7 @@ Run it a few more times and watch the file grow.
 
 ---
 
-## Step 2 — Schedule it with cron
+## Step 2 - Schedule it with cron
 
 Open your crontab (your personal cron schedule):
 
@@ -43,7 +43,7 @@ This runs the script **every minute**.
 
 ---
 
-## Step 3 — Watch it run
+## Step 3 - Watch it run
 
 Wait a minute or two, then check the log:
 

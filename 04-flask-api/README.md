@@ -1,6 +1,6 @@
-# 04 — Flask REST API
+# 04 - Flask REST API
 
-Most of the web runs on APIs — your phone apps, websites, and services all talk to servers by sending HTTP requests and getting back JSON. Here you'll build one yourself.
+Most of the web runs on APIs - your phone apps, websites, and services all talk to servers by sending HTTP requests and getting back JSON. Here you'll build one yourself.
 
 This API lets you post messages and read them back. Nothing fancy, but the same pattern is used in production apps everywhere.
 
@@ -73,4 +73,4 @@ JSON is just a way of formatting data so programs can read it easily. It looks l
 - Add a `/messages/<id>` route that returns a single message by its ID
 - Add a `name` field to each message so you can sign your posts
 - Add a `DELETE /messages` route that clears all messages
-- Connect this API to the web server from project 01 — fetch and display messages in the browser using JavaScript
+- Connect this API to the web server from project 01 - fetch and display messages in the browser using JavaScript

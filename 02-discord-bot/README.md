@@ -1,4 +1,4 @@
-# 02 — Discord Ping/Pong Bot
+# 02 - Discord Ping/Pong Bot
 
 You're going to run a Discord bot on this server. When someone types `!ping` in Discord, the bot replies `Pong!`.
 
@@ -11,7 +11,7 @@ You need a **bot token**. This is like a password that lets your code log in as 
 1. Go to https://discord.com/developers/applications
 2. Click **New Application**, give it a name
 3. Go to the **Bot** tab on the left
-4. Click **Reset Token** and copy it — you only see it once!
+4. Click **Reset Token** and copy it - you only see it once!
 5. Scroll down and turn on **Message Content Intent**
 6. Go to **OAuth2 → URL Generator**, tick `bot`, tick `Send Messages` and `Read Messages`
 7. Copy the generated URL and open it to invite the bot to a server you own
@@ -57,7 +57,7 @@ Bot is online!
 
 **5. Test it**
 
-Go to your Discord server and type `!ping` — the bot should reply `Pong! 🏓`
+Go to your Discord server and type `!ping` - the bot should reply `Pong! 🏓`
 
 ## Stop the bot
 

@@ -1,4 +1,4 @@
-# 01 — Host a Webpage
+# 01 - Host a Webpage
 
 You're going to serve a real webpage from this server so anyone on the same network can visit it in their browser.
 
@@ -6,7 +6,7 @@ You're going to serve a real webpage from this server so anyone on the same netw
 
 - `server.py` starts a web server on **port 8080**
 - It automatically serves `index.html` to anyone who visits
-- No extra software needed — Python has this built in
+- No extra software needed - Python has this built in
 
 ## Steps
 

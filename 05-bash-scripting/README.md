@@ -1,12 +1,12 @@
-# 05 — Bash Scripting
+# 05 - Bash Scripting
 
-A bash script is just a text file full of commands — the same commands you type in the terminal, saved so you can run them all at once. Bash scripts are everywhere in server work: backups, deployments, health checks, automation.
+A bash script is just a text file full of commands - the same commands you type in the terminal, saved so you can run them all at once. Bash scripts are everywhere in server work: backups, deployments, health checks, automation.
 
 This project has three scripts, each teaching something new.
 
 ---
 
-## Before you start — make scripts executable
+## Before you start - make scripts executable
 
 Linux won't run a script unless you tell it the file is allowed to be executed:
 
@@ -19,7 +19,7 @@ You only need to do this once per file.
 
 ---
 
-## Script 1 — Variables and input
+## Script 1 - Variables and input
 
 ```bash
 ./01_hello.sh
@@ -33,13 +33,13 @@ nano 01_hello.sh
 ```
 
 **Key things to notice:**
-- Variables are set with `NAME="value"` — no spaces around `=`
+- Variables are set with `NAME="value"` - no spaces around `=`
 - Variables are used with a `$` in front: `$NAME`
 - `read YOUR_NAME` waits for the user to type something
 
 ---
 
-## Script 2 — System info
+## Script 2 - System info
 
 ```bash
 ./02_system_info.sh
@@ -57,7 +57,7 @@ This script shows you:
 
 ---
 
-## Script 3 — Backup with a timestamp
+## Script 3 - Backup with a timestamp
 
 ```bash
 ./03_backup.sh
@@ -69,7 +69,7 @@ This script compresses your entire `server-workshop` folder into a `.tar.gz` fil
 
 **Key things to notice:**
 - `mkdir -p` creates a folder (and doesn't error if it already exists)
-- `if [ $? -eq 0 ]` checks whether the last command succeeded (`$?` is the exit code — `0` means OK)
+- `if [ $? -eq 0 ]` checks whether the last command succeeded (`$?` is the exit code - `0` means OK)
 - `tar -czf` creates a compressed archive
 
 ---

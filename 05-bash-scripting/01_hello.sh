@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Variables — no spaces around the = sign
+# Variables - no spaces around the = sign
 NAME="World"
 NUMBER=42
 

@@ -27,7 +27,7 @@ except ConnectionRefusedError:
 sock.sendall((name + "\n").encode())
 
 def receive_messages():
-    """Run in a background thread — prints messages as they arrive."""
+    """Run in a background thread - prints messages as they arrive."""
     while True:
         try:
             data = sock.recv(1024)
