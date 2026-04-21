@@ -13,7 +13,7 @@ You need a **bot token**. This is like a password that lets your code log in as 
 3. Go to the **Bot** tab on the left
 4. Click **Reset Token** and copy it - you only see it once!
 5. Scroll down and turn on **Message Content Intent**
-6. Go to **OAuth2 → URL Generator**, tick `bot`, tick `Send Messages` and `Read Messages`
+6. Go to **OAuth2 → URL Generator** on the left, tick `bot`, tick `Send Messages` and `Read message history`
 7. Copy the generated URL and open it to invite the bot to a server you own
 
 ---
@@ -27,7 +27,7 @@ cd 02-discord-bot
 
 **2. Install the discord.py library**
 ```bash
-pip3 install -r requirements.txt
+sudo apt install python3-discord
 ```
 
 **3. Add your token**
