@@ -1,6 +1,7 @@
 # 07 - TCP Chat Server
 
-This one is different from the others - it's a **multiplayer** project. One person in the room runs the server, and everyone else connects to it. You can all send messages to each other in real time, directly through the terminal.
+This one is different from the others - it's a **multiplayer** project. One person in the room runs the server, and everyone else connects to it. You can all send messages to each other in real time, directly through the terminal. 
+If you have nobody just ask around or ask the presenter (me), ill run a server and let people chat.
 
 No internet required. It works entirely over the local network.
 
@@ -26,7 +27,7 @@ Your computer and the server are connected by a **socket** - basically a pipe be
 Only **one person** does this step.
 
 ```bash
-cd 07-tcp-chat
+cd 10-tcp-chat
 python3 server.py
 ```
 
@@ -48,7 +49,7 @@ Tell everyone else your IP address so they can connect.
 Everyone else runs this (replace `10.0.0.5` with the server's actual IP):
 
 ```bash
-cd 07-tcp-chat
+cd 10-tcp-chat
 python3 client.py 10.0.0.5
 ```
 

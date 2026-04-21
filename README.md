@@ -24,8 +24,8 @@ You're connected via SSH - that means you're typing commands directly on a machi
 Clone this repo onto the server:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/server-workshop.git
-cd server-workshop
+git clone https://github.com/DeeKahy/Linux-Server-Workshop.git
+cd Linux-Server-Workshop
 ```
 
 Then pick a project folder and read its `README.md`.

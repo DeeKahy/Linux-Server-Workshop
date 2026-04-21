@@ -54,7 +54,4 @@ ctrl + c
 
 ## Challenge ideas
 
-- Change the heading and text in `index.html`
-- Change the background colour (look for `background: #f0f4ff`)
-- Add a second paragraph or a list of links
 - Try serving on a different port by changing `PORT = 8080` in `server.py`

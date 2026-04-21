@@ -34,7 +34,7 @@ crontab -e
 This opens a text editor. Add this line at the bottom:
 
 ```
-* * * * * /home/ubuntu/server-workshop/06-cron-jobs/logger.sh
+* * * * * /home/ubuntu/Linux-Server-Workshop/06-cron-jobs/logger.sh
 ```
 
 Save and exit (`ctrl+o`, `ctrl+x` for nano).
@@ -102,5 +102,4 @@ crontab -r          # remove ALL your cron jobs (careful!)
 
 - Change the schedule to run every 2 minutes (`*/2 * * * *`)
 - Edit `logger.sh` to also log disk usage (hint: `df -h / | tail -1`)
-- Schedule the backup script from project 05 to run once a day
 - Add a second cron job that does something different

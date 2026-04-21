@@ -53,7 +53,7 @@ This means: **block everything coming in, allow everything going out** - unless 
 sudo ufw allow ssh
 ```
 
-This is the same as `sudo ufw allow 22`.
+This is the same as `sudo ufw allow 22` because ssh uses port 22 by default.
 
 ---
 
@@ -99,7 +99,7 @@ sudo ufw status numbered
 
 Delete a rule by its number:
 ```bash
-sudo ufw delete 3
+sudo ufw delete 3 # make sure this is NOT port 22
 ```
 
 Or delete by name:

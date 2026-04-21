@@ -117,11 +117,3 @@ sudo apt update && sudo apt upgrade
 | `sudo apt list --upgradable` | Show what's currently out of date |
 | `sudo unattended-upgrades --dry-run` | Test without installing anything |
 
----
-
-## Challenge ideas
-
-- Run `sudo unattended-upgrades --dry-run --debug` and read the output
-- Check what's currently outdated: `sudo apt list --upgradable`
-- Install a silly package (`sudo apt install cowsay`), run it (`cowsay "hello"`), then remove it (`sudo apt remove cowsay`)
-- Look at the unattended-upgrades log after a day to see what got patched automatically
