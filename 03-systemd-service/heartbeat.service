@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 # Change this path to wherever you cloned the repo
-ExecStart=/usr/bin/python3 /home/ubuntu/Linux-Server-Workshop/03-systemd-service/heartbeat.py
+ExecStart=/usr/bin/python3 ~/Linux-Server-Workshop/03-systemd-service/heartbeat.py
 Restart=always
 User=ubuntu
 

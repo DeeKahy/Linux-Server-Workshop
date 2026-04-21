@@ -20,22 +20,24 @@ It also writes to `/tmp/heartbeat.log`. Check that file:
 cat /tmp/heartbeat.log
 ```
 
+Note, tmp stands for temporary, files and folders inside /tmp get deleted when you restart the server.
+
 ---
 
-## Step 2 - Edit the service file
+## Step 2 - Have a look inside heartbeat.service (Optional)
 
-Open `heartbeat.service` and update the path on the `ExecStart` line to match where you cloned the repo:
+Open `heartbeat.service` and look for the `ExecStart` line:
 
 ```bash
 nano heartbeat.service
 ```
 
-Change:
+Specifically:
 ```
 ExecStart=/usr/bin/python3 /home/ubuntu/server-workshop/03-systemd-service/heartbeat.py
 ```
 
-If you cloned somewhere else, adjust the path. Save with `ctrl+o` then `ctrl+x`.
+The text after `ExecStart=` is the command that will be run.
 
 ---
 
@@ -47,7 +49,7 @@ Copy the service file to where systemd looks for services:
 sudo cp heartbeat.service /etc/systemd/system/heartbeat.service
 ```
 
-Tell systemd to pick up the new file:
+Reload systemd to have it pick up the new file:
 ```bash
 sudo systemctl daemon-reload
 ```
