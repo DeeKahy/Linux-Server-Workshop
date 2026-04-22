@@ -15,7 +15,7 @@ cd 04-flask-api
 
 **2. Install Flask**
 ```bash
-pip3 install -r requirements.txt
+sudo apt install python3-flask
 ```
 
 **3. Start the API**
@@ -28,6 +28,8 @@ You should see:
 API running on http://0.0.0.0:5000
 ```
 
+You do not need to open the link on a browser.
+
 ---
 
 ## Try it out
@@ -35,11 +37,14 @@ API running on http://0.0.0.0:5000
 Open a **second terminal** (keep the API running in the first one) and use `curl` to talk to it.
 
 **Check it's alive:**
+Replace "YOUR-IP" with your actual IP address you used in ssh, something like "123.45.67.89".
 ```bash
-curl http://localhost:5000/ping
+curl http://YOUR_SERVER_IP:5000/ping
 ```
 ```json
-{"response": "pong"}
+{
+     "response": "pong"
+}
 ```
 
 **Post a message:**
